@@ -1,0 +1,53 @@
+{
+  "generator-phovea": {
+    "type": "app",
+    "modules": [
+      "tdp_core",
+      "phovea_server"
+    ],
+    "vendors": {
+      "others": "phovea.*|tdp_.*|tdp-.*|datavisyn.*",
+      "phovea": "phovea.*",
+      "tdp": "tdp_.|tdp-.*",
+      "dv": "datavisyn.*"
+    },
+    "filesToLoad": {
+      "file-loader": "404|robots"
+    },
+    "libraries": [],
+    "libraryExternals": [],
+    "name": "coral",
+    "author": "PatrickAdelberger",
+    "today": "Fri, 14 Jun 2019 11:27:31 GMT",
+    "githubAccount": "Caleydo",
+    "app": "coral_public",
+    "clientOnly": true,
+    "entries": {
+      "app": {
+        "js": "dist/initialize.app.js",
+        "template": "dist/app.template.ejs",
+        "html": "app/index.html",
+        "chunkName": "app",
+        "excludeChunks": ["welcome"]
+      },
+      "welcome": {
+        "js": "dist/initialize.welcome.js",
+        "template": "dist/welcome.template.ejs",
+        "html": "index.html",
+        "chunkName": "welcome",
+        "excludeChunks": ["app"]
+      }
+    },
+    "libraryAliases": {
+      "d3": "d3/d3.js"
+    },
+    "sextensions": [],
+    "unknown": {
+      "requirements": [],
+      "dockerPackages": []
+    },
+    "ignores": [],
+    "extensions": [
+    ]
+  }
+}
