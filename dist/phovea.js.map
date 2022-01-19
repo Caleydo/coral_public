@@ -1,1 +1,1 @@
-{"version":3,"file":"phovea.js","sourceRoot":"","sources":["../src/phovea.ts"],"names":[],"mappings":"AAOA,MAAM,CAAC,OAAO,WAAW,QAAmB;IACxC,QAAQ;AAEZ,CAAC"}
+{"version":3,"file":"phovea.js","sourceRoot":"","sources":["../src/phovea.ts"],"names":[],"mappings":"AAMA,OAAO,EAAC,wBAAwB,EAAE,iBAAiB,EAAC,MAAM,QAAQ,CAAC;AAGnE,MAAM,CAAC,OAAO,WAAW,QAAmB;IACxC,QAAQ,CAAC,IAAI,CAAC,wBAAwB,EAAE,iBAAiB,EAAE,GAAG,EAAE,CAAC,MAAM,CAAC,gBAAgB,CAAC,EAAE;QACvF,IAAI,EAAE,8BAA8B;QACpC,IAAI,EAAE,iBAAiB,CAAC,KAAK;KAChC,CAAC,CAAC;AAEP,CAAC"}

@@ -2,7 +2,8 @@ import 'ordino/dist/robots.txt';
 import * as React from 'react';
 import * as ReactDOM from 'react-dom';
 import { HashRouter, Switch, Route } from 'react-router-dom';
-import { DatasetsPage, Error404Page, FeaturesPage, HelpPage, HomePage, NewsPage, PublicationPage, RouterScrollToTop } from 'coral';
+import { RouterScrollToTop } from 'coral';
+import { DatasetsPage, Error404Page, FeaturesPage, HelpPage, HomePage, NewsPage, PublicationPage } from './pages';
 ReactDOM.render(React.createElement(React.Fragment, null,
     React.createElement(HashRouter, null,
         React.createElement(RouterScrollToTop, null),
