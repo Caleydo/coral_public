@@ -14,4 +14,4 @@ import reg from './dist/phovea';
 import 'tdp_core/phovea_registry.js';
 
 //self
-PluginRegistry.getInstance().register('coral', reg);
+PluginRegistry.getInstance().register('coral_public', reg);
