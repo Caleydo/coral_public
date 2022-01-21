@@ -1,10 +1,8 @@
 import React from 'react';
-import {DisclaimerCard} from './DisclaimerCard';
 import {CoralContactForm} from './CoralContactForm';
-import {OrdinoScrollspy, OrdinoScrollspyItem} from 'ordino';
-import {VideoCard, IVideoCardProps} from './VideoCard';
 import {TermsOfUseCard} from './TermsOfUseCard';
-import {SourceCodeCard} from './SourceCodeCard';
+import {OrdinoScrollspy, OrdinoScrollspyItem} from 'ordino';
+import {SourceCodeCard,VideoCard, IVideoCardProps, DisclaimerCard} from 'coral';
 
 const cards = [
     {

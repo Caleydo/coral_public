@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { HeaderNavigation, OrdinoFooter } from 'ordino';
-import { DevelopedByAffiliations } from './components/DevelopedByAffiliations';
+import { DevelopedByAffiliations } from 'coral';
 import { CoralHelpSection } from './components/CoralHelpSection';
 import { useScrollToSlug } from 'ordino';
 export function HelpPage() {

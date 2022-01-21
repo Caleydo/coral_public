@@ -1,7 +1,7 @@
 import {OrdinoFooter} from 'ordino';
 import * as React from 'react';
 import {BrowserRouter} from 'react-router-dom';
-import {DevelopedByAffiliations} from '../pages/components/DevelopedByAffiliations';
+import {DevelopedByAffiliations} from 'coral';
 import {CoralHelpSection} from '../pages/components/CoralHelpSection';
 
 export default function HelpTab() {

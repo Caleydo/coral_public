@@ -1,10 +1,8 @@
 import React from 'react';
-import { DisclaimerCard } from './DisclaimerCard';
 import { CoralContactForm } from './CoralContactForm';
-import { OrdinoScrollspy, OrdinoScrollspyItem } from 'ordino';
-import { VideoCard } from './VideoCard';
 import { TermsOfUseCard } from './TermsOfUseCard';
-import { SourceCodeCard } from './SourceCodeCard';
+import { OrdinoScrollspy, OrdinoScrollspyItem } from 'ordino';
+import { SourceCodeCard, VideoCard, DisclaimerCard } from 'coral';
 const cards = [
     {
         id: 'coral-at-a-glance',
