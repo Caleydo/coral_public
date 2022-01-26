@@ -30,13 +30,13 @@ export function CoralHero() {
           <div className="row coral-hero-actions my-4">
             <div className="col text-center">
               <button type="button" className="btn btn-link btn-lg" onClick={() => setModalIsClosed(false)} data-bs-toggle="modal" data-bs-target={`#${INTRO_VIDEO_MODAL_ID}`}>
-                <i className="fas fa-play"></i>
+                <i className="fas fa-play-circle"></i>
               Watch intro video
             </button>
             </div>
             <div className="col text-center">
               <Link to="/help" className="btn btn-link btn-lg">
-                <i className="fas fa-question"></i>
+                <i className="fas fa-question-circle"></i>
               Learn more about Coral
             </Link>
             </div>
