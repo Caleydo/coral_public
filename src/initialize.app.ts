@@ -3,8 +3,9 @@
  */
 
 import {App} from 'coral';
+import loginDialog from './LoginDialog.html';
 
 const APP_NAME = 'Coral';
 
 document.title = APP_NAME;
-const tdpApp = new App(APP_NAME); // assign to variable to avoid linting errors
+const tdpApp = new App(APP_NAME, loginDialog); // assign to variable to avoid linting errors

@@ -5,12 +5,16 @@
  **************************************************************************** */
 import {EP_ORDINO_FOOTER_MENU, EP_ORDINO_HEADER_MENU, EP_ORDINO_LOGO, EP_ORDINO_START_MENU_TAB, EP_ORDINO_START_MENU_TAB_SHORTCUT, EStartMenuSection, IOrdinoFooterMenuDesc, IOrdinoHeaderMenuDesc, IOrdinoLogoDesc, IStartMenuTabShortcutDesc} from 'ordino';
 import {IRegistry, PluginRegistry} from 'tdp_core';
+import {EXTENSION_POINT_CUSTOMIZED_LOGIN_FORM} from 'tdp_core';
 
 export default function (registry: IRegistry) {
     registry.push(EP_ORDINO_START_MENU_TAB, 'ordino_help_tab', () => import('./menu/HelpTab'), {
         icon: 'fas fa-question-circle fa-fw',
         menu: EStartMenuSection.RIGHT,
     });
+    
+    // Coral's custom login form
+    registry.push(EXTENSION_POINT_CUSTOMIZED_LOGIN_FORM, 'tdpBioinfoLoginForm', () => import('./LoginDialog'), {});
 
     // Welcome Page:
   // -------------------------------------------------------------------------------------------------------
