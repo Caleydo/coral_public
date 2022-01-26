@@ -12,7 +12,7 @@ export default function (registry: IRegistry) {
         icon: 'fas fa-question-circle fa-fw',
         menu: EStartMenuSection.RIGHT,
     });
-    
+
     // Coral's custom login form
     registry.push(EXTENSION_POINT_CUSTOMIZED_LOGIN_FORM, 'tdpBioinfoLoginForm', () => import('./LoginDialog'), {});
 
