@@ -1,0 +1,91 @@
+{
+  "name": "coral_public",
+  "description": "Coral is a web-based cohort analysis tool to interactively create, refine, and analyze patient cohorts.",
+  "homepage": "https://caleydo.org",
+  "version": "1.0.1-SNAPSHOT",
+  "author": {
+    "name": "PatrickAdelberger",
+    "email": "coral@caleydo.org",
+    "url": "https://jku-vds-lab.at/"
+  },
+  "license": "SEE LICENSE FILE",
+  "bugs": {
+    "url": "https://github.com/Caleydo/coral/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Caleydo/coral_public.git"
+  },
+  "private": true,
+  "scripts": {
+    "clean": "rimraf build lib dist",
+    "delete-dependencies": "rimraf node_modules",
+    "compile": "tsc",
+    "compile:watch": "tsc -w",
+    "postcompile": "npm run copy",
+    "lint": "tslint -c tslint.json -p . 'src/**/*.ts?(x)' 'tests/**/*.ts?(x)'",
+    "fixlint": "tslint --fix -c tslint.json -p . 'src/**/*.ts?(x)' 'tests/**/*.ts?(x)'",
+    "docs": "typedoc --options typedoc.json src/**.ts",
+    "prebuild": "node -e \"process.exit(process.env.PHOVEA_SKIP_TESTS === undefined?1:0)\" || npm run test",
+    "test": "jest --passWithNoTests",
+    "test:watch": "jest --watch",
+    "posttest": "npm run lint",
+    "copy": "npm run copy-assets && npm run copy-styles && npm run copy-app-assets",
+    "build": "npm run clean && npm run compile",
+    "copy-assets": "if [ -d src/assets ]; then shx --verbose cp -R src/assets/. dist/assets/; fi && if [ -d src/templates ]; then shx --verbose cp -R src/templates/. dist/templates/; fi",
+    "copy-styles": "if [ -d src/scss ]; then shx --verbose cp -R src/scss/. dist/scss/; fi",
+    "copy-app-assets": "shx --verbose cp src/*.txt dist/ | true && shx --verbose cp src/*.html dist/ | true && shx --verbose cp src/*.ejs dist/ | true",
+    "release:major": "npm version major && npm publish && git push --follow-tags",
+    "release:minor": "npm version minor && npm publish && git push --follow-tags",
+    "release:patch": "npm version patch && npm publish && git push --follow-tags",
+    "predist": "npm run build && npm run docs",
+    "dist": "mkdir lib && cd dist && tar cvzf ../lib/ordino_public.tar.gz *"
+  },
+  "files": [
+    "src",
+    "index.js",
+    "phovea.js",
+    "phovea_registry.js",
+    "build",
+    "dist"
+  ],
+  "engines": {
+    "npm": ">= 3",
+    "node": ">= 6"
+  },
+  "dependencies": {
+    "coral": "github:Caleydo/coral#develop",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "react-router-dom": "^5.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^16.14.6",
+    "@types/react-dom": "^16.9.5",
+    "@types/react-router-dom": "^5.1.7",
+    "@babel/core": "^7.14.0",
+    "@babel/preset-env": "^7.14.1",
+    "@types/jquery": "~3.5.5",
+    "@types/jest": "~26.0.20",
+    "babel-loader": "^8.2.2",
+    "identity-obj-proxy": "~3.0.0",
+    "ifdef-loader": "2.0.0",
+    "jest": "~26.6.3",
+    "jest-raw-loader": "~1.0.1",
+    "mkdirp": "0.5.1",
+    "rimraf": "~3.0.2",
+    "sass": "^1.29.0",
+    "shx": "~0.3.3",
+    "ts-jest": "~26.4.4",
+    "tslib": "~2.0.3",
+    "tslint": "~5.20.1",
+    "typedoc": "~0.19.2",
+    "typescript": "~3.9.7",
+    "worker-loader": "^2.0.0"
+  },
+  "browser": {
+    "fs": false,
+    "path": false,
+    "os": false
+  }
+}
