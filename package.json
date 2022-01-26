@@ -54,7 +54,7 @@
     "node": ">= 6"
   },
   "dependencies": {
-    "coral": "github:Caleydo/coral#och/customization-changes",
+    "coral": "github:Caleydo/coral#develop",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.2.0"
