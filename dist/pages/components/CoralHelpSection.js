@@ -26,13 +26,13 @@ const cards = [
     },
     {
         id: 'terms-of-use',
-        name: 'Terms of use',
+        name: 'Terms of Use',
         icon: 'fas fa-user-tie',
         factory: () => React.createElement(TermsOfUseCard, null)
     },
     {
         id: 'source-code-licenses',
-        name: 'Source code',
+        name: 'Source Code',
         icon: 'fas fa-code',
         factory: () => React.createElement(SourceCodeCard, null)
     },
