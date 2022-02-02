@@ -2,7 +2,7 @@ import React from 'react';
 import { AppMetaDataUtils, useAsync } from 'tdp_core';
 export function SourceCodeCard() {
     const loadMetaData = React.useMemo(() => () => AppMetaDataUtils.getMetaData(), []);
-    const { status, value } = useAsync(loadMetaData);
+    const { status, value } = useAsync(loadMetaData, []);
     return (React.createElement(React.Fragment, null,
         React.createElement("div", { className: "card shadow-sm p-2" },
             React.createElement("div", { className: "card-body" },
