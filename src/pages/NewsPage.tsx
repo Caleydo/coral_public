@@ -4,9 +4,50 @@ import {Link} from 'react-router-dom';
 import confetti from 'canvas-confetti';
 
 import coralHero from '../assets/coral-hero.png';
+import newSession from '../assets/news/new_session.png';
+import exportCohorts from '../assets/news/export_cohorts.png';
 import {hasCookie} from 'coral';
 
 const sections = [
+  {
+    id: 'v1-2',
+    name: 'Version 1.2',
+    date: '2022-24-02',
+    markup: () => (
+      <>
+        <p className="lead text-muted">
+          This update contains new <b>features</b>, <b>style changes</b>, and structural changes of the application. The most important changes are:
+        </p>
+        <h5 className="mt-4">Export Cohorts</h5>
+        <ul>
+          <li>
+            It is now possible to export cohorts as a CSV-file from Coral and continue the analysis elsewhere.
+          </li>
+          <li>
+            <b>How to</b>: Open the <i>Inspect Items</i> operation and add any attributes you would like to include in the export.
+            As soon as the data is loaded the export button will be displayed in the top right of the operation area.
+            The exported data will match the displayed table.
+          </li>
+        </ul>
+        <img className="img-fluid border border-gray-300" src={exportCohorts} alt="Export cohorts" />
+
+        <h5 className="mt-4">Start a New Session</h5>
+        <ul>
+          <li>
+            You can now start a new session by clicking the <b>Start New Session</b> button next to the available datasets.
+          </li>
+        </ul>
+        <img className="img-fluid border border-gray-300" src={newSession} alt="Start new session" />
+
+        <h5 className="mt-4">Briefly noted</h5>
+        <ul>
+          <li>
+            New default font: <b>Roboto</b>.
+          </li>
+        </ul>
+      </>
+    )
+  },
   {
     id: 'v1-0',
     name: 'Version 1.0',

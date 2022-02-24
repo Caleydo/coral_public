@@ -3,8 +3,44 @@ import { HeaderNavigation, OrdinoFooter, OrdinoScrollspy, OrdinoScrollspyItem, u
 import { Link } from 'react-router-dom';
 import confetti from 'canvas-confetti';
 import coralHero from '../assets/coral-hero.png';
+import newSession from '../assets/news/new_session.png';
+import exportCohorts from '../assets/news/export_cohorts.png';
 import { hasCookie } from 'coral';
 const sections = [
+    {
+        id: 'v1-2',
+        name: 'Version 1.2',
+        date: '2022-24-02',
+        markup: () => (React.createElement(React.Fragment, null,
+            React.createElement("p", { className: "lead text-muted" },
+                "This update contains new ",
+                React.createElement("b", null, "features"),
+                ", ",
+                React.createElement("b", null, "style changes"),
+                ", and structural changes of the application. The most important changes are:"),
+            React.createElement("h5", { className: "mt-4" }, "Export Cohorts"),
+            React.createElement("ul", null,
+                React.createElement("li", null, "It is now possible to export cohorts as a CSV-file from Coral and continue the analysis elsewhere."),
+                React.createElement("li", null,
+                    React.createElement("b", null, "How to"),
+                    ": Open the ",
+                    React.createElement("i", null, "Inspect Items"),
+                    " operation and add any attributes you would like to include in the export. As soon as the data is loaded the export button will be displayed in the top right of the operation area. The exported data will match the displayed table.")),
+            React.createElement("img", { className: "img-fluid border border-gray-300", src: exportCohorts, alt: "Export cohorts" }),
+            React.createElement("h5", { className: "mt-4" }, "Start a New Session"),
+            React.createElement("ul", null,
+                React.createElement("li", null,
+                    "You can now start a new session by clicking the ",
+                    React.createElement("b", null, "Start New Session"),
+                    " button next to the available datasets.")),
+            React.createElement("img", { className: "img-fluid border border-gray-300", src: newSession, alt: "Start new session" }),
+            React.createElement("h5", { className: "mt-4" }, "Briefly noted"),
+            React.createElement("ul", null,
+                React.createElement("li", null,
+                    "New default font: ",
+                    React.createElement("b", null, "Roboto"),
+                    "."))))
+    },
     {
         id: 'v1-0',
         name: 'Version 1.0',
