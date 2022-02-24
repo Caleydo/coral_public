@@ -10,7 +10,7 @@ const sections = [
     {
         id: 'v1-2',
         name: 'Version 1.2',
-        date: '2022-24-02',
+        date: '2022-02-24',
         markup: () => (React.createElement(React.Fragment, null,
             React.createElement("p", { className: "lead text-muted" },
                 "This update contains new ",

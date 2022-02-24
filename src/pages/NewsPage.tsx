@@ -12,7 +12,7 @@ const sections = [
   {
     id: 'v1-2',
     name: 'Version 1.2',
-    date: '2022-24-02',
+    date: '2022-02-24',
     markup: () => (
       <>
         <p className="lead text-muted">
