@@ -39,7 +39,7 @@
     "release:minor": "npm version minor && npm publish && git push --follow-tags",
     "release:patch": "npm version patch && npm publish && git push --follow-tags",
     "predist": "npm run build && npm run docs",
-    "dist": "mkdir lib && cd dist && tar cvzf ../lib/ordino_public.tar.gz *"
+    "dist": "mkdir lib && cd dist && tar cvzf ../lib/coral_public.tar.gz *"
   },
   "files": [
     "src",
@@ -55,6 +55,7 @@
   },
   "dependencies": {
     "coral": "github:Caleydo/coral#semver:^1.2.0",
+    "ordino": "github:Caleydo/ordino#develop",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.2.0"
@@ -66,21 +67,21 @@
     "@babel/core": "^7.14.0",
     "@babel/preset-env": "^7.14.1",
     "@types/jquery": "~3.5.5",
-    "@types/jest": "~26.0.20",
+    "@types/jest": "~27.4.1",
     "babel-loader": "^8.2.2",
     "identity-obj-proxy": "~3.0.0",
     "ifdef-loader": "2.0.0",
-    "jest": "~26.6.3",
+    "jest": "~27.5.1",
     "jest-raw-loader": "~1.0.1",
     "mkdirp": "0.5.1",
     "rimraf": "~3.0.2",
     "sass": "^1.29.0",
     "shx": "~0.3.3",
-    "ts-jest": "~26.4.4",
-    "tslib": "~2.0.3",
+    "ts-jest": "~27.1.3",
+    "tslib": "~2.3.1",
     "tslint": "~5.20.1",
-    "typedoc": "~0.19.2",
-    "typescript": "~3.9.7",
+    "typedoc": "~0.22.13",
+    "typescript": "~4.6.2",
     "worker-loader": "^2.0.0"
   },
   "browser": {
