@@ -48,7 +48,7 @@ export default function (registry) {
                 faIcon: 'fas fa-database fa-fw',
                 text: 'Datasets',
                 page: '/datasets'
-            }, ,
+            },
             {
                 faIcon: 'fas fa-fw fa-book-open',
                 text: `Publications`,
