@@ -55,7 +55,7 @@
   },
   "dependencies": {
     "coral": "github:Caleydo/coral#semver:^1.2.0",
-    "ordino": "github:Caleydo/ordino#TS4",
+    "ordino": "github:Caleydo/ordino#develop",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.2.0"
