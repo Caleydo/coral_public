@@ -39,7 +39,7 @@
     "release:minor": "npm version minor && npm publish && git push --follow-tags",
     "release:patch": "npm version patch && npm publish && git push --follow-tags",
     "predist": "npm run build && npm run docs",
-    "dist": "mkdir lib && cd dist && tar cvzf ../lib/ordino_public.tar.gz *"
+    "dist": "mkdir lib && cd dist && tar cvzf ../lib/coral_public.tar.gz *"
   },
   "files": [
     "src",
@@ -55,6 +55,7 @@
   },
   "dependencies": {
     "coral": "github:Caleydo/coral#semver:^1.2.0",
+    "ordino": "github:Caleydo/ordino#TS4",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.2.0"
