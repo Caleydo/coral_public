@@ -10,7 +10,7 @@ const cards = [
         id: 'coral-at-a-glance',
         name: 'Coral at a Glance',
         icon: 'fas fa-eye',
-        factory: (props) => React.createElement(VideoCard, Object.assign({}, props))
+        factory: (props) => React.createElement(VideoCard, { ...props })
     },
     {
         id: 'contact-us',
@@ -51,7 +51,7 @@ export function CoralHelpSection(props) {
                                     React.createElement("i", { className: `me-2 ordino-icon-2 ${item.icon}` }),
                                     " ",
                                     item.name),
-                                React.createElement(item.factory, Object.assign({}, { openInNewWindow: props.openInNewWindow })))));
+                                React.createElement(item.factory, { ...{ openInNewWindow: props.openInNewWindow } }))));
                     })))),
             props.children))));
 }

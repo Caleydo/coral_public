@@ -32,7 +32,7 @@ export function VideoCard({ openInNewWindow }) {
             React.createElement("p", { className: "card-text" }, "Coral's database contains  metadata as well as mutation data from the AACR Project GENIE, mRNA expression, DNA copy number, and mutation data from The Cancer Genome Atlas (TCGA) and the Cell Line Encyclopedia (CCLE). Furthermore, two CRISPR / RNAi loss-of-function screen data sets (DRIVE and Avana) are included."),
             React.createElement("p", { className: "card-text" },
                 "You can find more detailed information about the datasets ",
-                React.createElement(Link, Object.assign({}, newWindowProps, { className: "card-link", to: "/datasets" }), "here"),
+                React.createElement(Link, { ...newWindowProps, className: "card-link", to: "/datasets" }, "here"),
                 "."),
             React.createElement("h5", { className: "card-title mt-4" },
                 React.createElement("i", { className: "me-2 fas fa-book-open" }),
@@ -65,7 +65,7 @@ export function VideoCard({ openInNewWindow }) {
             React.createElement("p", { className: "card-text" }, "Please cite the first article when using Coral and publishing your results."),
             React.createElement("p", { className: "card-text" },
                 "You can find more information about the publications ",
-                React.createElement(Link, Object.assign({}, newWindowProps, { className: "card-link", to: "/publications" }), "here"),
+                React.createElement(Link, { ...newWindowProps, className: "card-link", to: "/publications" }, "here"),
                 "."))));
 }
 //# sourceMappingURL=VideoCard.js.map
