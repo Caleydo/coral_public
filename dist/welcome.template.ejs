@@ -36,6 +36,13 @@
     <script src="https://cdn.polyfill.io/v3/polyfill.min.js"></script>
   </head>
   <body>
+    <script>
+      // maintain compatibility with old session links (e.g., bookmarks, vistories)
+      // redirect to app subdirectory if URL hash contains a CLUE session
+      if(location.hash.includes('clue_graph') || location.hash.includes('clue_state')) {
+        location.replace(location.href.replace('#', 'app/#'));
+      }
+    </script>
     <div id="welcome">
       <div id="loading-welcome">Loading &hellip;</div>
     </div>
