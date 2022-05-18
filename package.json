@@ -54,8 +54,8 @@
     "node": ">= 6"
   },
   "dependencies": {
-    "coral": "github:Caleydo/coral#develop",
-    "ordino": "github:Caleydo/ordino#develop",
+    "coral": "git+ssh://git@github.com:Caleydo/coral#develop",
+    "ordino": "git+ssh://git@github.com:Caleydo/ordino#develop",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.2.0"
