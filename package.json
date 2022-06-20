@@ -2,7 +2,7 @@
   "name": "coral_public",
   "description": "Coral is a web-based cohort analysis tool to interactively create, refine, and analyze patient cohorts.",
   "homepage": "https://caleydo.org",
-  "version": "3.0.0",
+  "version": "3.0.1-SNAPSHOT",
   "author": {
     "name": "PatrickAdelberger",
     "email": "coral@caleydo.org",
@@ -54,8 +54,8 @@
     "node": ">= 6"
   },
   "dependencies": {
-    "coral": "git+ssh://git@github.com:Caleydo/coral#semver:^3.0.0",
-    "ordino": "git+ssh://git@github.com:Caleydo/ordino#semver:^12.0.0",
+    "coral": "git+ssh://git@github.com:Caleydo/coral#develop",
+    "ordino": "git+ssh://git@github.com:Caleydo/ordino#develop",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.2.0"
