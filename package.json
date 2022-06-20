@@ -16,7 +16,6 @@
     "type": "git",
     "url": "git@github.com:Caleydo/coral_public.git"
   },
-  "private": true,
   "scripts": {
     "clean": "rimraf build lib dist",
     "delete-dependencies": "rimraf node_modules",
