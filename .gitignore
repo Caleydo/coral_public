@@ -12,3 +12,14 @@ node_modules/
 /.awcache
 /.cache-loader
 package-lock.json
+/dist/
+
+
+# yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
