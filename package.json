@@ -75,8 +75,8 @@
   "visyn": {
     "entries": {
       "app": {
-        "js": "dist/initialize.app.js",
-        "template": "dist/app.template.ejs",
+        "js": "src/initialize.app.ts",
+        "template": "src/app.template.ejs",
         "html": "app/index.html",
         "chunkName": "app",
         "excludeChunks": [
@@ -84,8 +84,8 @@
         ]
       },
       "welcome": {
-        "js": "dist/initialize.welcome.js",
-        "template": "dist/welcome.template.ejs",
+        "js": "src/initialize.welcome.tsx",
+        "template": "src/welcome.template.ejs",
         "html": "index.html",
         "chunkName": "welcome",
         "excludeChunks": [
