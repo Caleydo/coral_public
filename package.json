@@ -53,7 +53,7 @@
   },
   "dependencies": {
     "canvas-confetti": "^1.4.0",
-    "coral": "git+ssh://git@github.com/Caleydo/coral#dev_d3_merge_fix",
+    "coral": "git+ssh://git@github.com/Caleydo/coral#develop",
     "ordino": "git+ssh://git@github.com/Caleydo/ordino#develop",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
