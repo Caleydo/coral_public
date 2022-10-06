@@ -10,14 +10,14 @@ export function CoralTeaserCards() {
           <div className="card shadow-sm h-100">
             <div className="card-body">
               <p className="card-text">
-                🎉 It's the 2-year anniversary of Coral and we're happy to launch Coral v1.0! 🚀
+                🎉 It's the 3-year anniversary of Coral! 🎉 
               </p>
               <p className="card-text">
                 This websites introduces Coral's <Link to="/features">features</Link>, the <Link to="/datasets">available datasets</Link>, and <Link to="/publications">publications</Link>.
                 We also provide an <Link to="/help">introductory video</Link> to get to know Coral.
               </p>
               <p className="card-text">
-                In the upcoming releases, we will focus improving the usability and interactions with Coral.
+                In the upcoming releases, we will focus on improving the usability and interactions with Coral.
               </p>
             </div>
             <div className="card-footer"><Link to="/news" className="btn btn-light"><i className="me-1 fas fa-angle-right"></i> Read the release notes</Link></div>

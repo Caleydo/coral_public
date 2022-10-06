@@ -10,6 +10,32 @@ import {hasCookie} from 'coral';
 
 const sections = [
   {
+    id: 'v3',
+    name: 'Version 3',
+    date: '2022-08-04',
+    markup: () => (
+      <>
+      <ul>
+        <li>New Colors</li>
+      </ul>
+      </>
+    )
+  },
+  {
+    id: 'v2',
+    name: 'Version 2',
+    date: '2022-05-02',
+    markup: () => (
+      <>
+        <ul>
+          <li>New Colors</li>
+          <li>new prevalence</li>
+          <li>cohort numbers</li>
+        </ul>
+      </>
+    )
+  },
+  {
     id: 'v1-2',
     name: 'Version 1.2',
     date: '2022-02-24',
