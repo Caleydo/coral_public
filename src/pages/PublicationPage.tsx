@@ -146,7 +146,7 @@ function TourdinoPublication() {
             <br />
             <b>TourDino: A Support View for Confirming Patterns in Tabular Data.</b>
             <br />
-            <i>EuroVis Workshop on Visual Analytics (EuroVA '19), 2019.</i>
+            <i>EuroVis Workshop on Visual Analytics (EuroVA &apos;19), 2019.</i>
           </p>
         </div>
         <div className="card-footer">

@@ -41,7 +41,7 @@ export function VideoCard({ openInNewWindow }: IVideoCardProps) {
           <i>Characterization operations</i> give insights into the cohorts.
         </p>
         <p className="card-text">
-          You can find more details on Coral's workflow and features in the{' '}
+          You can find more details on Coral&apos;s workflow and features in the{' '}
           <Link className="card-link" to="/features">
             Features
           </Link>{' '}
@@ -53,9 +53,9 @@ export function VideoCard({ openInNewWindow }: IVideoCardProps) {
           Datasets
         </h5>
         <p className="card-text">
-          Coral's database contains metadata as well as mutation data from the AACR Project GENIE, mRNA expression, DNA copy number, and mutation data from The
-          Cancer Genome Atlas (TCGA) and the Cell Line Encyclopedia (CCLE). Furthermore, two CRISPR / RNAi loss-of-function screen data sets (DRIVE and Avana)
-          are included.
+          Coral&apos;s database contains metadata as well as mutation data from the AACR Project GENIE, mRNA expression, DNA copy number, and mutation data from
+          The Cancer Genome Atlas (TCGA) and the Cell Line Encyclopedia (CCLE). Furthermore, two CRISPR / RNAi loss-of-function screen data sets (DRIVE and
+          Avana) are included.
         </p>
         <p className="card-text">
           You can find more detailed information about the datasets{' '}
@@ -89,7 +89,7 @@ export function VideoCard({ openInNewWindow }: IVideoCardProps) {
           <br />
           <b>TourDino: A Support View for Confirming Patterns in Tabular Data.</b>
           <br />
-          <i>EuroVis Workshop on Visual Analytics (EuroVA '19), 2019.</i>
+          <i>EuroVis Workshop on Visual Analytics (EuroVA &apos;19), 2019.</i>
         </p>
         <p className="card-text text-muted">
           Katarina Furmanova, Samuel Gratzl, Holger Stitz, Thomas Zichner, Miroslava Jaresova, Martin Ennemoser, Alexander Lex, Marc Streit.

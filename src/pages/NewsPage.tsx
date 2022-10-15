@@ -62,8 +62,8 @@ const sections = [
 
         <p>
           Coral comes with this dedicated homepage to welcome new users, providing an overview of <Link to="/features">the features</Link>,{' '}
-          <Link to="/datasets">available datasets</Link>, and <Link to="/publications">publications</Link>. For an overview of Coral's features, we also provide
-          an <Link to="/help">introductory video</Link> to get to know Coral.
+          <Link to="/datasets">available datasets</Link>, and <Link to="/publications">publications</Link>. For an overview of Coral&apos;s features, we also
+          provide an <Link to="/help">introductory video</Link> to get to know Coral.
         </p>
 
         <p>

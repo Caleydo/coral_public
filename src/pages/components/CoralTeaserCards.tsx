@@ -7,13 +7,13 @@ export function CoralTeaserCards() {
       <div className="row row-cols-1 row-cols-md-2 my-5">
         <div className="col mb-4">
           <h4 className="text-center mb-3">
-            <i className="me-2 ordino-icon-2 fas fa-newspaper" /> What's new?
+            <i className="me-2 ordino-icon-2 fas fa-newspaper" /> What&apos;s new?
           </h4>
           <div className="card shadow-sm h-100">
             <div className="card-body">
-              <p className="card-text">🎉 It's the 2-year anniversary of Coral and we're happy to launch Coral v1.0! 🚀</p>
+              <p className="card-text">🎉 It&apos;s the 2-year anniversary of Coral and we&apos;re happy to launch Coral v1.0! 🚀</p>
               <p className="card-text">
-                This websites introduces Coral's <Link to="/features">features</Link>, the <Link to="/datasets">available datasets</Link>, and{' '}
+                This websites introduces Coral&apos;s <Link to="/features">features</Link>, the <Link to="/datasets">available datasets</Link>, and{' '}
                 <Link to="/publications">publications</Link>. We also provide an <Link to="/help">introductory video</Link> to get to know Coral.
               </p>
               <p className="card-text">In the upcoming releases, we will focus improving the usability and interactions with Coral.</p>

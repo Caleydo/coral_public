@@ -8,8 +8,8 @@ export function TermsOfUseCard() {
           <div className="list-group-item">This instance of Coral is intended for scientific research and non-commercial use only.</div>
           <div className="list-group-item">Coral cannot be used for the provision of medical advice.</div>
           <div className="list-group-item">
-            We expect attribution (e.g. in publications, services or products) for any of Coral's online services, databases or software in accordance with good
-            scientific practice.
+            We expect attribution (e.g. in publications, services or products) for any of Coral&apos;s online services, databases or software in accordance with
+            good scientific practice.
           </div>
           <div className="list-group-item">
             Coral provides data collated from the public domain with references to their sources. We cannot guarantee the accuracy of any data or databases nor

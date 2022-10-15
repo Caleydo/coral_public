@@ -9,7 +9,7 @@ export function create(_loginMenu: HTMLElement, loginDialog: HTMLElement) {
     checkboxAcceptGenieTerms.checked = localStorageValue === 'true';
   }
 
-  checkboxAcceptGenieTerms.addEventListener('change', function () {
+  checkboxAcceptGenieTerms.addEventListener('change', function listener() {
     localStorage.setItem(LOCALSTORAGE_ACCEPT_GENIE_TERMS, String(this.checked));
   });
 }
