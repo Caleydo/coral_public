@@ -6,10 +6,10 @@ export function create(_loginMenu: HTMLElement, loginDialog: HTMLElement) {
 
   if (localStorageValue !== null) {
     // check the checkbox if it was checked before
-    checkboxAcceptGenieTerms.checked = (localStorageValue === 'true');
+    checkboxAcceptGenieTerms.checked = localStorageValue === 'true';
   }
 
-  checkboxAcceptGenieTerms.addEventListener('change', function() {
+  checkboxAcceptGenieTerms.addEventListener('change', function () {
     localStorage.setItem(LOCALSTORAGE_ACCEPT_GENIE_TERMS, String(this.checked));
   });
 }

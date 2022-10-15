@@ -2,7 +2,7 @@
  * Created by Caleydo Team on 31.08.2016.
  */
 
-import {App} from 'coral';
+import { App } from 'coral';
 import loginDialog from './LoginDialog.html';
 
 const APP_NAME = 'Coral';
