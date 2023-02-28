@@ -68,6 +68,9 @@
     "tslint": "~5.20.1",
     "worker-loader": "^2.0.0"
   },
+  "resolutions": {
+    "visyn_scripts": "git+ssh://git@github.com/datavisyn/visyn_scripts.git#visyn_core"
+  },
   "browser": {
     "fs": false,
     "os": false,
