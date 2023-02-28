@@ -42,7 +42,7 @@ export default function (registry: IRegistry) {
     priority: 20,
   });
 
-  registry.push(EP_ORDINO_START_MENU_TAB_SHORTCUT, 'ordino_sessions_shortcut', () => ({}), <IStartMenuTabShortcutDesc>{
+  registry.push(EP_ORDINO_START_MENU_TAB_SHORTCUT, 'ordino_sessions_shortcut', () => ({}), <Partial<IStartMenuTabShortcutDesc>>{
     text: 'Current Analysis Session',
     icon: 'fas fa-history',
     tabId: 'ordino_sessions_tab',
