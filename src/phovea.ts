@@ -3,35 +3,46 @@
  * Copyright (c) The Caleydo Team. All rights reserved.
  * Licensed under the new BSD license, available at http://caleydo.org/license
  **************************************************************************** */
-import {EP_ORDINO_FOOTER_MENU, EP_ORDINO_HEADER_MENU, EP_ORDINO_LOGO, EP_ORDINO_START_MENU_TAB, EP_ORDINO_START_MENU_TAB_SHORTCUT, EStartMenuSection, IOrdinoFooterMenuDesc, IOrdinoHeaderMenuDesc, IOrdinoLogoDesc, IStartMenuTabShortcutDesc} from 'ordino';
-import {IRegistry, PluginRegistry} from 'tdp_core';
-import {EXTENSION_POINT_CUSTOMIZED_LOGIN_FORM} from 'tdp_core';
+import {
+  EP_ORDINO_FOOTER_MENU,
+  EP_ORDINO_HEADER_MENU,
+  EP_ORDINO_LOGO,
+  EP_ORDINO_START_MENU_TAB,
+  EP_ORDINO_START_MENU_TAB_SHORTCUT,
+  EStartMenuSection,
+  IOrdinoFooterMenuDesc,
+  IOrdinoHeaderMenuDesc,
+  IOrdinoLogoDesc,
+  IStartMenuTabShortcutDesc,
+} from 'ordino';
+import { IRegistry, PluginRegistry } from 'visyn_core';
+import { EXTENSION_POINT_CUSTOMIZED_LOGIN_FORM } from 'tdp_core';
 
 export default function (registry: IRegistry) {
-    registry.push(EP_ORDINO_START_MENU_TAB, 'ordino_help_tab', () => import('./menu/HelpTab'), {
-        icon: 'fas fa-question-circle fa-fw',
-        menu: EStartMenuSection.RIGHT,
-    });
+  registry.push(EP_ORDINO_START_MENU_TAB, 'ordino_help_tab', () => import('./menu/HelpTab'), {
+    icon: 'fas fa-question-circle fa-fw',
+    menu: EStartMenuSection.RIGHT,
+  });
 
-    // Coral's custom login form
-    registry.push(EXTENSION_POINT_CUSTOMIZED_LOGIN_FORM, 'tdpBioinfoLoginForm', () => import('./LoginDialog'), {});
+  // Coral's custom login form
+  registry.push(EXTENSION_POINT_CUSTOMIZED_LOGIN_FORM, 'tdpBioinfoLoginForm', () => import('./LoginDialog'), {});
 
-    // Welcome Page:
+  // Welcome Page:
   // -------------------------------------------------------------------------------------------------------
 
   registry.push(EP_ORDINO_START_MENU_TAB, 'ordino_dataset_tab', () => import('ordino/dist/internal/menu/tabs/DatasetsTab'), {
     text: 'Datasets',
     menu: EStartMenuSection.MAIN,
-    priority: 10
+    priority: 10,
   });
 
   registry.push(EP_ORDINO_START_MENU_TAB, 'ordino_sessions_tab', () => import('ordino/dist/internal/menu/tabs/SessionsTab'), {
     text: 'Analysis Sessions',
     menu: EStartMenuSection.MAIN,
-    priority: 20
+    priority: 20,
   });
 
-  registry.push(EP_ORDINO_START_MENU_TAB_SHORTCUT, 'ordino_sessions_shortcut', () => ({}), <IStartMenuTabShortcutDesc>{
+  registry.push(EP_ORDINO_START_MENU_TAB_SHORTCUT, 'ordino_sessions_shortcut', () => ({}), <Partial<IStartMenuTabShortcutDesc>>{
     text: 'Current Analysis Session',
     icon: 'fas fa-history',
     tabId: 'ordino_sessions_tab',
@@ -43,18 +54,18 @@ export default function (registry: IRegistry) {
     links: [
       {
         faIcon: 'fas fa-newspaper fa-fw',
-        text: 'What\'s new?',
-        page: '/news'
+        text: "What's new?",
+        page: '/news',
       },
       {
         faIcon: 'fas fa-list fa-fw',
         text: 'Features',
-        page: '/features'
+        page: '/features',
       },
       {
         faIcon: 'fas fa-database fa-fw',
         text: 'Datasets',
-        page: '/datasets'
+        page: '/datasets',
       },
       {
         faIcon: 'fas fa-fw fa-book-open',
@@ -64,15 +75,14 @@ export default function (registry: IRegistry) {
       {
         faIcon: 'fas fa-question-circle fa-fw',
         text: 'Help',
-        page: '/help'
-      }
-    ]
+        page: '/help',
+      },
+    ],
   });
 
   registry.push(EP_ORDINO_FOOTER_MENU, 'ordino_footer_menu', () => ({}), <IOrdinoFooterMenuDesc>{
     lists: [
       [
-
         {
           page: '/news',
           faIcon: 'fas fa-fw fa-newspaper',
@@ -92,7 +102,7 @@ export default function (registry: IRegistry) {
           page: '/publications',
           faIcon: 'fas fa-fw fa-book-open',
           text: `Publications`,
-        }
+        },
       ],
       [
         {
@@ -120,14 +130,13 @@ export default function (registry: IRegistry) {
           faIcon: 'fas fa-fw fa-code',
           text: `Source code & licenses`,
         },
-      ]
-    ]
+      ],
+    ],
   });
 
   registry.push(EP_ORDINO_LOGO, 'coral_logo', () => import('coral/dist/assets/favicon.svg').then(PluginRegistry.getInstance().asResource), <IOrdinoLogoDesc>{
     text: 'Coral',
     width: 24,
-    height: 24
+    height: 24,
   });
-
 }
