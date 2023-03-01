@@ -15,7 +15,8 @@ import {
   IOrdinoLogoDesc,
   IStartMenuTabShortcutDesc,
 } from 'ordino';
-import { IRegistry, PluginRegistry, EXTENSION_POINT_CUSTOMIZED_LOGIN_FORM } from 'tdp_core';
+import { IRegistry, PluginRegistry } from 'visyn_core';
+import { EXTENSION_POINT_CUSTOMIZED_LOGIN_FORM } from 'tdp_core';
 
 export default function (registry: IRegistry) {
   registry.push(EP_ORDINO_START_MENU_TAB, 'ordino_help_tab', () => import('./menu/HelpTab'), {
@@ -41,7 +42,7 @@ export default function (registry: IRegistry) {
     priority: 20,
   });
 
-  registry.push(EP_ORDINO_START_MENU_TAB_SHORTCUT, 'ordino_sessions_shortcut', () => ({}), <IStartMenuTabShortcutDesc>{
+  registry.push(EP_ORDINO_START_MENU_TAB_SHORTCUT, 'ordino_sessions_shortcut', () => ({}), <Partial<IStartMenuTabShortcutDesc>>{
     text: 'Current Analysis Session',
     icon: 'fas fa-history',
     tabId: 'ordino_sessions_tab',
