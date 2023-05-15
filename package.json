@@ -54,7 +54,7 @@
   "dependencies": {
     "canvas-confetti": "^1.5.1",
     "coral": "git+ssh://git@github.com:Caleydo/coral#thinkh/react18",
-    "ordino": "git+ssh://git@github.com:Caleydo/ordino#develop",
+    "ordino": "git+ssh://git@github.com:Caleydo/ordino#react18",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.2.0",
