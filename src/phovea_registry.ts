@@ -10,9 +10,9 @@ import reg from './phovea';
 /**
  * build a registry by registering all phovea modules
  */
-//other modules
+// other modules
 import 'visyn_core/phovea_registry';
 import 'tdp_core/dist/phovea_registry';
 
-//self
+// self
 PluginRegistry.getInstance().register('coral_public', reg);

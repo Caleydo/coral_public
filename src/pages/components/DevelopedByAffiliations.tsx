@@ -13,13 +13,19 @@ export function DevelopedByAffiliations() {
       </div>
       <div className="row">
         <div className="col text-center">
-          <a href="https://jku-vds-lab.at/" target="_blank" rel="noopener noreferrer"><img src={logoLab} alt="JKU Visual Data Science Lab" style={{height: '45px'}} /></a>
+          <a href="https://jku-vds-lab.at/" target="_blank" rel="noopener noreferrer">
+            <img src={logoLab} alt="JKU Visual Data Science Lab" style={{ height: '45px' }} />
+          </a>
         </div>
         <div className="col text-center">
-          <a href="https://www.boehringer-ingelheim.com" target="_blank" rel="noopener noreferrer"><img src={logoBI} alt="Boehringer Ingelheim" style={{height: '45px'}} /></a>
+          <a href="https://www.boehringer-ingelheim.com" target="_blank" rel="noopener noreferrer">
+            <img src={logoBI} alt="Boehringer Ingelheim" style={{ height: '45px' }} />
+          </a>
         </div>
         <div className="col text-center">
-          <a href="https://www.datavisyn.io" target="_blank" rel="noopener noreferrer"><img src={logoDatavisyn} alt="datavisyn" style={{height: '35px'}} /></a>
+          <a href="https://www.datavisyn.io" target="_blank" rel="noopener noreferrer">
+            <img src={logoDatavisyn} alt="datavisyn" style={{ height: '35px' }} />
+          </a>
         </div>
       </div>
     </section>
