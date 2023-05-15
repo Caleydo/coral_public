@@ -53,12 +53,12 @@
   },
   "dependencies": {
     "canvas-confetti": "^1.5.1",
-    "coral": "git+ssh://git@github.com:Caleydo/coral#thinkh/693_refactor-and-fix-eslint",
+    "coral": "git+ssh://git@github.com:Caleydo/coral#thinkh/react18",
     "ordino": "git+ssh://git@github.com:Caleydo/ordino#develop",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.2.0",
-    "visyn_scripts": "git+ssh://git@github.com/datavisyn/visyn_scripts.git#develop"
+    "visyn_scripts": "git+ssh://git@github.com/datavisyn/visyn_scripts.git#react18"
   },
   "devDependencies": {
     "@types/react": "^16.14.6",
