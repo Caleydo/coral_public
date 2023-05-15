@@ -1,12 +1,12 @@
 import 'ordino/dist/robots.txt';
 
 import * as React from 'react';
-import * as ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import { HashRouter, Switch, Route } from 'react-router-dom';
 import { RouterScrollToTop } from 'coral';
 import { DatasetsPage, Error404Page, FeaturesPage, HelpPage, HomePage, NewsPage, PublicationPage } from './pages';
 
-ReactDOM.render(
+createRoot(document.querySelector('#welcome')).render(
   <HashRouter>
     <RouterScrollToTop />
     {/* A <Switch> looks through its children <Route>s and
@@ -45,5 +45,4 @@ ReactDOM.render(
       </Route>
     </Switch>
   </HashRouter>,
-  document.querySelector('#welcome'),
 );
