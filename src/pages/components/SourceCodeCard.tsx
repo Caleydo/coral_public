@@ -1,5 +1,5 @@
 import React from 'react';
-import { useAsync } from 'visyn_core';
+import { useAsync } from 'visyn_core/hooks';
 import { AppMetaDataUtils } from 'tdp_core';
 
 export function SourceCodeCard() {
