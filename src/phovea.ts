@@ -15,7 +15,7 @@ import {
   IOrdinoLogoDesc,
   IStartMenuTabShortcutDesc,
 } from 'ordino';
-import { IRegistry, PluginRegistry } from 'visyn_core';
+import { IRegistry, PluginRegistry } from 'visyn_core/plugin';
 import { EXTENSION_POINT_CUSTOMIZED_LOGIN_FORM } from 'tdp_core';
 
 export default function (registry: IRegistry) {
