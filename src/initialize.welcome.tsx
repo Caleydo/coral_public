@@ -3,8 +3,8 @@ import 'ordino/dist/robots.txt';
 import * as React from 'react';
 import { createRoot } from 'react-dom/client';
 import { HashRouter, Switch, Route } from 'react-router-dom';
-import { RouterScrollToTop } from 'coral';
 import { DatasetsPage, Error404Page, FeaturesPage, HelpPage, HomePage, NewsPage, PublicationPage } from './pages';
+import { RouterScrollToTop } from './utils/RouterScrollToTop';
 
 createRoot(document.querySelector('#welcome')).render(
   <HashRouter>
