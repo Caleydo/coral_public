@@ -4,11 +4,43 @@ import { Link } from 'react-router-dom';
 import confetti from 'canvas-confetti';
 
 import { hasCookie } from 'coral';
+
 import coralHero from '../assets/coral-hero.png';
-import newSession from '../assets/news/new_session.png';
-import exportCohorts from '../assets/news/export_cohorts.png';
+
+import v120_newSession from '../assets/news/v120_new_session.png';
+import v120_exportCohorts from '../assets/news/v120_export_cohorts.png';
+
+import v200_plotsWithoutGridLines from '../assets/news/v200_plots-without-grid-lines.png';
+
+/** *****************************************************************************************
+ * REMINDER: UPDATE THE TEASER ON THE HOME PAGE WHEN ADDING A NEW NEWS ITEM!
+ ******************************************************************************************** */
 
 const sections = [
+  {
+    id: 'v2-0',
+    name: 'Version 2.0',
+    date: '2023-08-11',
+    markup: () => (
+      <>
+        <p className="lead text-muted">
+          This update contains several <b>style changes</b>, <b>bugfixes</b>, and structural changes of the application. The most important changes are:
+        </p>
+        <h5 className="mt-4">Remove grid lines from visualizations</h5>
+        <p>The grid lines in the visualizations have been removed to improve the readability of the visualizations.</p>
+        <img className="img-fluid border border-gray-300" src={v200_plotsWithoutGridLines} alt="Plots without grid lines." />
+
+        <h5 className="mt-4">Fix colors assignment in plots</h5>
+        <p>
+          Previously, the color assignment for cohorts with the same name (e.g., after filtering two cohorts by cohorts by <i>Gender: Female</i>) in plots was
+          wrong. We have fixed this issue and the correct color of the cohort should be assigned now.
+        </p>
+
+        <h5 className="mt-4">Select root cohort automatically after onboarding</h5>
+        <p>The onboarding is only displayed when users launch the application for the first time. Afterwards, the root cohort is selected automatically.</p>
+      </>
+    ),
+  },
   {
     id: 'v1-2',
     name: 'Version 1.2',
@@ -26,7 +58,7 @@ const sections = [
             the export button will be displayed in the top right of the operation area. The exported data will match the displayed table.
           </li>
         </ul>
-        <img className="img-fluid border border-gray-300" src={exportCohorts} alt="Export cohorts" />
+        <img className="img-fluid border border-gray-300" src={v120_exportCohorts} alt="Export cohorts" />
 
         <h5 className="mt-4">Start a New Session</h5>
         <ul>
@@ -34,7 +66,7 @@ const sections = [
             You can now start a new session by clicking the <b>Start New Session</b> button next to the available datasets.
           </li>
         </ul>
-        <img className="img-fluid border border-gray-300" src={newSession} alt="Start new session" />
+        <img className="img-fluid border border-gray-300" src={v120_newSession} alt="Start new session" />
 
         <h5 className="mt-4">Briefly noted</h5>
         <ul>
