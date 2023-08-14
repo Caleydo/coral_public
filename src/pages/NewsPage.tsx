@@ -32,8 +32,8 @@ const sections = [
 
         <h5 className="mt-4">Fix colors assignment in plots</h5>
         <p>
-          Previously, the color assignment for cohorts with the same name (e.g., after filtering two cohorts by <i>Gender: Female</i>) in plots was
-          wrong. We have fixed this issue and the correct color of the cohort should be assigned now.
+          Previously, the color assignment for cohorts with the same name (e.g., after filtering two cohorts by <i>Gender: Female</i>) in plots was wrong. We
+          have fixed this issue and the correct color of the cohort should be assigned now.
         </p>
 
         <h5 className="mt-4">Select root cohort automatically after onboarding</h5>
