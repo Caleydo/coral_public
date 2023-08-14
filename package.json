@@ -2,7 +2,7 @@
   "name": "coral_public",
   "description": "Coral is a web-based cohort analysis tool to interactively create, refine, and analyze patient cohorts.",
   "homepage": "https://caleydo.org",
-  "version": "3.2.0",
+  "version": "4.0.0",
   "author": {
     "name": "PatrickAdelberger",
     "email": "coral@caleydo.org",
@@ -31,7 +31,7 @@
     "dist": "mkdir lib && cd dist && tar cvzf ../lib/bundle.tar.gz *",
     "docs": "visyn_scripts docs",
     "lint:fix": "visyn_scripts lint --fix",
-    "lint": "visyn_scripts lint || true",
+    "lint": "visyn_scripts lint",
     "prepack": "yarn run build",
     "start": "visyn_scripts start --env workspace_mode=single",
     "storybook:build": "NODE_OPTIONS=--max_old_space_size=4096 build-storybook",
@@ -52,17 +52,21 @@
     "node": ">=16"
   },
   "dependencies": {
-    "canvas-confetti": "^1.4.0",
-    "coral": "git+ssh://git@github.com/Caleydo/coral#semver:^4.1.0",
-    "ordino": "git+ssh://git@github.com/Caleydo/ordino#semver:^13.0.1",
+    "canvas-confetti": "^1.5.1",
+    "coral": "git+ssh://git@github.com:Caleydo/coral#semver:^5.0.0",
+    "ordino": "git+ssh://git@github.com:Caleydo/ordino#semver:^14.0.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.2.0",
-    "visyn_scripts": "^1.1.1"
+    "visyn_scripts": "^4.1.0"
+  },
+  "resolutions": {
+    "@types/react": "~18.2.0",
+    "@types/react-dom": "~18.2.0",
+    "react": "~18.2.0",
+    "react-dom": "~18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^16.14.6",
-    "@types/react-dom": "^16.9.5",
     "@types/react-router-dom": "^5.1.7",
     "mkdirp": "0.5.1",
     "tslint": "~5.20.1",

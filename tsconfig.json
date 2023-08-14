@@ -1,5 +1,4 @@
-{
-  "extends": "visyn_scripts/config/tsconfig.template.json",
+ { "extends": "visyn_scripts/config/tsconfig.template.json",
   "compilerOptions": {
     "outDir": "./dist",
   },
