@@ -17,6 +17,41 @@
     "url": "git@github.com:Caleydo/coral_public.git"
   },
   "private": true,
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "exports": {
+    ".": {
+      "types": [
+        "./dist/index.d.ts",
+        "./src/index.ts"
+      ],
+      "import": [
+        "./dist/index.js",
+        "./src/index.ts"
+      ],
+      "default": [
+        "./dist/index.js",
+        "./src/index.ts"
+      ]
+    },
+    "./phovea_registry": [
+      "./dist/phovea_registry.js",
+      "./src/phovea_registry.ts"
+    ],
+    "./dist/phovea_registry": [
+      "./dist/phovea_registry.js",
+      "./src/phovea_registry.ts"
+    ],
+    "./src/scss/*": [
+      "./dist/scss/*",
+      "./src/scss/*"
+    ],
+    "./dist/scss/*": [
+      "./dist/scss/*",
+      "./src/scss/*"
+    ],
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "all": "yarn run lint:fix && yarn run test && yarn run build && yarn run dist",
     "build": "yarn run clean && yarn run compile && yarn run copy",
@@ -32,7 +67,6 @@
     "docs": "visyn_scripts docs",
     "lint:fix": "visyn_scripts lint --fix",
     "lint": "visyn_scripts lint",
-    "prepack": "yarn run build",
     "start": "visyn_scripts start --env workspace_mode=single",
     "storybook:build": "NODE_OPTIONS=--max_old_space_size=4096 build-storybook",
     "storybook": "NODE_OPTIONS=--max_old_space_size=4096 start-storybook -p 6006",
@@ -67,10 +101,7 @@
     "react-dom": "~18.2.0"
   },
   "devDependencies": {
-    "@types/react-router-dom": "^5.1.7",
-    "mkdirp": "0.5.1",
-    "tslint": "~5.20.1",
-    "worker-loader": "^2.0.0"
+    "@types/react-router-dom": "^5.1.7"
   },
   "browser": {
     "fs": false,
