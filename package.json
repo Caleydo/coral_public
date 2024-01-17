@@ -87,12 +87,12 @@
   },
   "dependencies": {
     "canvas-confetti": "^1.5.1",
-    "coral": "git+ssh://git@github.com/Caleydo/coral#develop",
-    "ordino": "git+ssh://git@github.com/Caleydo/ordino#develop",
+    "coral": "git+ssh://git@github.com/Caleydo/coral#semver:^5.0.0",
+    "ordino": "git+ssh://git@github.com/Caleydo/ordino#semver:^14.0.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-router-dom": "^5.2.0",
-    "visyn_scripts": "git+ssh://git@github.com/datavisyn/visyn_scripts.git#develop"
+    "visyn_scripts": "^4.1.0"
   },
   "resolutions": {
     "@types/react": "~18.2.0",
